@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://redvelvetface.netlify.app/sitemap.xml
