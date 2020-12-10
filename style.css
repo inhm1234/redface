@@ -1,16 +1,25 @@
 body {
-  font-family: 'Jua', sans-serif;
+    font-family: 'Jua', sans-serif;
   background-color: #ffffff;
-  box-sizing: border-box;
   color: #35465d;
 }
 
 .file-upload {
-  padding: 15% 3%;
-    margin: 0 auto;
+    margin:0 auto;
+  padding: 13% 5%;
     border-radius: 10px;
     border: solid 1.5px #f6f7fa;
     background-color: #f6f7fa;
+}
+
+.image-upload-wrap{
+    width:65%;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 5px #35465d;
+    background-color: #ffffff;
 }
 
 .file-upload-btn {
@@ -44,6 +53,7 @@ body {
   display: none;
   text-align: center;
 }
+
 #loading {
   display: none;
 }
@@ -68,15 +78,6 @@ body {
     margin: 0 auto;
 }
 
-.image-upload-wrap {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
-    object-fit: contain;
-    border-radius: 10px;
-    border: dashed 1.5px #35465d;
-    background-color: #ffffff;
-}
 
 .image-dropping,
 .image-upload-wrap:hover {
@@ -94,15 +95,32 @@ body {
 }
 
 .drag-text h3 {
-  font-weight: 500;
+  font-weight: 100;
   text-transform: uppercase;
+    color: #15824B;
+    padding: 60px 0;
 }
 
 .file-upload-image {
-  max-height: 60%;
-  max-width: 60%;
+  max-height: 200px;
+  max-width: 200px;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
+}
+
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .drag-text {
@@ -183,24 +201,25 @@ body {
 }
 
 .youtube-link {
-    font-size:1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-     text-decoration: underline;
+    font-family:NanumSquareR;
+    font-size: 1.5rem;
+    line-height:1.71;
+    text-align:center;
+    color:#f73737;
+    text-decoration:underline;
 }
 
 .youtube-link:hover {
-    font-size:1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-     text-decoration: underline;
+    font-family:NanumSquareR;
+    font-size: 1.5rem;
+    line-height:1.71;
+    text-align:center;
+    color:#f73737;
+    text-decoration:underline;
 }
 
 .youtube-icon {
-   width: 30px;
-    height: 27.262px;
+   width: 8%;
 }
 
 .upload {
@@ -208,10 +227,12 @@ body {
 }
 
 .upload-text {
-    width: 58%;
+   width:50%;
+    font-weight:100;
+    text-transform:uppercase;
     font-size: 1.5rem;
     line-height: 1.53;
-    text-align: center;
+    text-align:center;
     color: #35465d;
     margin: 0 auto;
 }
@@ -362,6 +383,11 @@ body {
     color: #3ba363;
 }
 
+.ad-banner {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
 label {
   cursor: pointer;
   display: inline-block;
@@ -371,7 +397,4 @@ label {
   border-radius: 30px;
   position: relative;
 }
-
-.ad-banner {
-    max-width: 320px;
 }
